@@ -20,81 +20,65 @@ packages:
   gitUsername: kvv
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: kvv
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: kvv
   gitBranch: main
 services:
-- serviceName: project.siqa_2712_azpp.integrations:tpp_daf
+- serviceName: project.siqa_2712_azpp.integrations:tpp_jdbc_sf
   packages:
   - name: SIQA_2712_AZPPProject
     version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
-- serviceName: services:add3Ints
-  packages:
-  - name: TPP_services_in_FCS
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: softwareag
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: pub.math:addInts
+- serviceName: SIQAJDBCAdapterTests.adapterServices:getData
   packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: Basics_1:ComplexFS
-  packages:
-  - name: SIQA_OriginTest_OnPremAssets
+  - name: SIQAJDBCAdapterTests
     version: "1.0"
-- serviceName: Basics_1:Basic_Flow
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: softwareag
+- serviceName: SIQACloudStreamsTests:connetorOperations
   packages:
-  - name: SIQA_OriginTest_OnPremAssets
+  - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: pub.math:divideInts
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+- serviceName: SIQACloudStreamsTests:createAccountConnectorService
   packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: pub.math:subtractInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: pub.math:multiplyIntList
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: Basics_1:mapservice
-  packages:
-  - name: SIQA_OriginTest_OnPremAssets
+  - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: Basics_1:TryCatch
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+- serviceName: SIQACloudStreamsTests:retrieveAccountConnectorService
   packages:
-  - name: SIQA_OriginTest_OnPremAssets
+  - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: Map_1:TestFlow
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+- serviceName: SIQACloudStreamsTests:deleteAccountConnectorService
   packages:
-  - name: SIQA_OriginTest_OnPremAssets
+  - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: REST_1_1.CurrentDateAndTime:_get
-  packages:
-  - name: SIQA_OriginTest_OnPremAssets
-    version: "1.0"
-- serviceName: pub.date:getCurrentDate
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: pub.string:objectToString
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: SOAP_1_1:showDateAndTime
-  packages:
-  - name: SIQA_OriginTest_OnPremAssets
-    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
