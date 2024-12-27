@@ -8,19 +8,21 @@
   <null name="shutdown_services"/>
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
-    <value name="TPP_services_in_FCS">1.0</value>
     <value name="SIQA_OriginTest_OnPremAssets">1.0</value>
+    <value name="TPP_services_in_FCS">1.0</value>
+    <value name="SIQAJDBCAdapterTests">1.0</value>
+    <value name="SIQACloudStreamsTests">1.0</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">6</value>
+  <value name="build">14</value>
   <null name="description"/>
   <value name="created_date">27-12-2024 08:56:57 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2024-12-27T08:59:49.02905205Z</value>
+  <value name="lastUpdated">2024-12-27T09:11:22.565373142Z</value>
   <value name="wmProjectId">fl9ef18e7156ca8f0d95ffa5</value>
   <value name="creator">siqa auto</value>
 </Values>
