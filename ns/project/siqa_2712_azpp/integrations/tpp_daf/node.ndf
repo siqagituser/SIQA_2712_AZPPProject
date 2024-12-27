@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">siqaauto</value>
-    <value name="createdDate">1735289867741</value>
-    <value name="lastModifiedDate">1735289867741</value>
+    <value name="lastModifiedBy">siqaauto</value>
+    <value name="lastModifiedDate">1735290011889</value>
     <value name="displayName">tpp_daf</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -63,6 +62,24 @@
           <value name="description">services:add3Ints</value>
           <value name="serviceName">services:add3Ints</value>
           <value name="displayName">add3Ints</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">SIQA_OriginTest_OnPremAssets</value>
+          <value name="groupName">SIQA_OriginTest_OnPremAssets;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">Basics_1:ComplexFS</value>
+          <value name="serviceName">Basics_1:ComplexFS</value>
+          <value name="displayName">ComplexFS</value>
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
