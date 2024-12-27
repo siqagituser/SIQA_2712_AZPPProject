@@ -8,7 +8,23 @@ packages:
   gitUsername: siqagituser
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/kvv
   gitUsername: kvv
   gitBranch: main
+services:
+- serviceName: project.siqa_2712_azpp.integrations:tpp_daf
+  packages:
+  - name: SIQA_2712_AZPPProject
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2015
